@@ -1,0 +1,32 @@
+# Entorno virtual Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Variables de entorno
+.env
+
+# Base de datos local
+*.db
+*.sqlite3
+
+# Node modules
+node_modules/
+dist/
+.vite/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
