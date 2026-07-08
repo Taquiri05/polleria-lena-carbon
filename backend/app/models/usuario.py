@@ -18,7 +18,7 @@ class Usuario(db.Model):
         default="RECEPCIONISTA",
     )
     activo = db.Column(db.Boolean, nullable=False, default=True)
-    created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, nullable=False, default=datetime.now)
 
     def set_password(self, password: str) -> None:
         """Hashea la contraseña con bcrypt (12 rounds) y la almacena."""

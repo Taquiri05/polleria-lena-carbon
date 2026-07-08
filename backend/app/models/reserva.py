@@ -33,7 +33,7 @@ class Reserva(db.Model):
         db.ForeignKey("mesa.id", ondelete="RESTRICT"),
         nullable=False,
     )
-    created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, nullable=False, default=datetime.now)
 
     # Transiciones de estado válidas
     TRANSICIONES_VALIDAS = {

@@ -22,7 +22,7 @@ class PedidoTakeaway(db.Model):
         default="recibido",
     )
     codigo_seguimiento = db.Column(db.String(20), nullable=False, unique=True)
-    created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, nullable=False, default=datetime.now)
 
     # Relación 1:N con ítems del pedido
     detalles = db.relationship(
